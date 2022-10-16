@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server-build": "webpack --config webpack.server.js",
-    "start": "npm run server-build && node server_dist/index.js"
+    "client-build": "webpack --config webpack.client.js",
+    "start": "npm run client-build && npm run server-build && node server_dist/index.js"
   },
   "keywords": [
     "ssr",
